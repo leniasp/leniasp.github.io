@@ -1,1 +1,6 @@
-theme: jekyll-theme-minimal
+destination:  _site/
+plugins_dir:  Alpha-Jekyll-Theme/_plugins/
+layouts_dir:  Alpha-Jekyll-Theme/_layouts/
+includes_dir: Alpha-Jekyll-Theme/_includes/
+exclude:
+  - Alpha-Jekyll-Theme/
