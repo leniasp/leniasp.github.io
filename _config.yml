@@ -1,6 +1,8 @@
+name: Lenia
+description: Alphs template for Jekyll
+paginate: 10
+
 destination:  _site/
-plugins_dir:  Alpha-Jekyll-Theme/_plugins/
-layouts_dir:  Alpha-Jekyll-Theme/_layouts/
-includes_dir: Alpha-Jekyll-Theme/_includes/
 exclude:
-  - Alpha-Jekyll-Theme/
+  - docker-compose.yml
+  - README.md

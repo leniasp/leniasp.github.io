@@ -1,0 +1,43 @@
+---
+title: Alpha2
+layout: default
+---
+<section class="box special">
+	<header class="major">
+		<h2>Lénia Amsterdam Tours</h2>
+		<p>Explore The Netherlands and Amsterdam. Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+	</header>
+	<div class="row">
+		<p>Explore The Netherlands and Amsterdam. Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+	</div>
+	<div class="row">
+		<p>Contact: 00000000000</p>
+	</div>
+</section>	
+
+<div class="row">
+	<div class="6u">
+		{% for post in site.posts offset: 0 limit: 1 %}
+		<section class="box special">
+			<span class="image featured"><img src="{{ post.image }}" alt="" /></span>
+			<h3>{{ post.title }}</h3>
+			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+			<ul class="actions">
+				<li><a href="{{ site.baseurl }}{{ post.url }}" class="button alt">Read Article</a></li>
+			</ul>
+		</section>
+		{% endfor %}
+	</div>
+	<div class="6u">
+		{% for post in site.posts offset: 1 limit: 1 %}
+		<section class="box special">
+			<span class="image featured"><img src="{{ post.image }}" alt="" /></span>
+			<h3>{{ post.title }}</h3>
+			<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+			<ul class="actions">
+				<li><a href="{{ site.baseurl }}{{ post.url }}" class="button alt">Read Article</a></li>
+			</ul>
+		</section>
+		{% endfor %}
+	</div>
+</div>
